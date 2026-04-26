@@ -1,0 +1,23 @@
+{
+  "appName": "HD Images",
+  "login": "Giriş Yap",
+  "loginWithGoogle": "Google ile Devam Et",
+  "register": "Kayıt Ol",
+  "email": "E-posta",
+  "password": "Şifre",
+  "confirmPassword": "Şifreyi Tekrarla",
+  "passwordsDoNotMatch": "Şifreler eşleşmiyor",
+  "alreadyHaveAccount": "Hesabın var mı?",
+  "noAccountYet": "Hesabın yok mu?",
+  "errorOccurred": "Bir hata oluştu",
+  "photoUpscaled": "Fotoğraf başarıyla yenilendi!",
+  "selectPhoto": "Fotoğraf Seçin",
+  "browseGallery": "Galeriye Göz At",
+  "startMagic": "Sihri Başlat!",
+  "settings": "Ayarlar",
+  "darkMode": "Karanlık Mod",
+  "language": "Dil",
+  "logout": "Çıkış Yap",
+  "selectPhotoPrompt": "Galerinizden HD kaliteye yükseltmek istediğiniz bir fotoğraf seçin.",
+  "aiProcessing": "Yapay Zeka İşliyor..."
+}

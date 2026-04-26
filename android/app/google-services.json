@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "406269581937",
+    "project_id": "image-enchance",
+    "storage_bucket": "image-enchance.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406269581937:android:2118e92c08fd6dfd3519d0",
+        "android_client_info": {
+          "package_name": "com.example.hd_images"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406269581937-0g3kg7mk4sigffjrugbrjlhmsrje8lel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ-sF5YMFLklKIHV16-Cqop96DhWqZ35U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406269581937-0g3kg7mk4sigffjrugbrjlhmsrje8lel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "406269581937-oe57g1n7lklmc9os9gu1u4etquu1guqf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hdImages"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

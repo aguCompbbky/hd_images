@@ -1,0 +1,70 @@
+proje adı: hd_images
+proje dili: dart/flutter
+
+projenin amacı: kullanıcıların fotoğraflarını yüksek çözünürlüğe yükseltmek.
+
+proje mimarisi: clean architecture
+-features
+    -feature 1
+        -data
+            -data_sources
+                -remote_data_source
+                -local_data_source(eğer gerekli olursa)
+            -models
+            -repositories_impl
+        -domain
+            -models
+            -repositories
+            -usecases
+        -presentation
+            -cubit
+            -pages
+            -widgets
+-core
+    -utils
+    -constants
+    -theme
+    -navigation
+    -localization
+    -notifications
+    -responsive_screen
+    -extensions
+    
+1- Remote data source kısmı mocklanabilir olmalı.
+2- Repository katmanı abstract class olmalı. Bu sayede katmanlar soyutlanmış olur.
+3- Modeller oluşturulurken json serileştirme için json_serializable kullanılmalı.
+4- build runner kütüphanesi kullanılmalı. Otomatik kodlar oluşturulmalı.
+5- usecaseler isimlendirilirken sonuna _usecase eklenmeli ve sadece isimleriyle ilgili işleri yapmalılar.
+6- Cubitler pagelerde kullanılırken gereksiz yere set edilmemeli eğer bir yerden veri çekilecek olursa uygulamaya hız kazandırmak maksadıyla shared preferences veya sqlite gibi cache yöntemleri kullanılabilir.
+7- Api çekmek gerekirse dio kütüphanesi kullanılmalı. Dio kütüphanesi ile api çekilirken interceptor kullanılmalı. Interceptor ile api çekilirken loglama yapılmalı. Loglama için debugPrint kullanılmalı.
+8- Genel olarak atomic widgetlar kullanılmalı. Ama kod okunabilirliği ön planda tutulmalı fazla abartılmamalı.
+9- eğer bir widget birden fazla yerde kullanılacaksa widgetlar klasörüne eklenmeli.
+10- Bir sayfada aşağı kaydırmalı bir liste varsa ve bu liste apiden veri çekiyorsa veriyi sadece sayfada çizileceği zaman çekmeli hepsini birden çekmemeli. Bunun için lazy loading kullanılmalı.
+11- Hiç bir text doğrudan text şeklinde sayfada bulunmamalı. Bunun yerine utils klasörü altında bulunan app_text.dart dosyası kullanılmalı. static const String appName = "HD Images"; şeklinde tanımlanmalı. bunları daha sonra eaysLocalizationda da kullanacağız.
+12- navigation için go_router kütüphanesi kullanılmalı. Go router ile navigation yapılırken route isimleri string olarak tanımlanmalı. 
+13- genel bir themes dart dosyası oluşturulmalı. Bu dosya birtakım temel tema ayarlarını wigetlara uygulamak için kullanılmalı.
+14- pagelarda padding verilirken veya boyut atanırken doğrudan sayı kullanılmamalı. Bunun yerine responsive_screen klasörü altında bulunan responsive_screen.dart dosyası kullanılmalı. responsive_screen.dart dosyası ile responsive screen oluşturulmalı. Bunlar telefon tablet ekranlarını varsayan farklı boyutlarına göre boyutlandırma yapmalı. Ve her zaman sayfa oranı üzerinden gidilmeli.
+15- overflowları engellemek maksadıyla expanded kullanılmalı.
+16- olası hatalara karşı loglar bulunmalı. Loglama için debugPrint kullanılmalı.
+17- fluttertoast kullanılmalı. Toast mesajları için app_text.dart dosyası kullanılmalı.
+18- lint kuralları yerine very_good_analysis kullanılmalı.
+19- pubspec.yaml düzenli olmalı.
+20- bağımlılık yönetimi dependency injection için get_it kullanılmalı.
+21- authentication için firebase_auth kullanılmalı.
+22- gerekli android ve ios dosya düzenlemelerini yap. (firebase, google sign in vb.)
+
+
+Uygulamanın nitelikleri:
+kullanıcı google hesabıyla giriş yapabilmeli.
+normal bir kullanıcı girişi de olmalı.
+galerisinden yükleyeceği fotoğrafı görüntü işleme yöntemleriyle kalitesini arttıracağız.
+(bu kısımda python mu kullanmalıyım onu sonra araştırıp karar vereceğiz. bu konuda tavsiyede ver.)
+biz bu fotoğrafları hiç depolamayacağız hepsi kullanıcının telefonunda olucak. çıktı da dahil.
+
+
+
+
+
+
+    
+

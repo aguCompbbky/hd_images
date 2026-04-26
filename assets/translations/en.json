@@ -1,0 +1,23 @@
+{
+  "appName": "HD Images",
+  "login": "Login",
+  "loginWithGoogle": "Continue with Google",
+  "register": "Register",
+  "email": "Email",
+  "password": "Password",
+  "confirmPassword": "Confirm Password",
+  "passwordsDoNotMatch": "Passwords do not match",
+  "alreadyHaveAccount": "Already have an account?",
+  "noAccountYet": "Don't have an account?",
+  "errorOccurred": "An error occurred",
+  "photoUpscaled": "Photo successfully enhanced!",
+  "selectPhoto": "Select Photo",
+  "browseGallery": "Browse Gallery",
+  "startMagic": "Start the Magic!",
+  "settings": "Settings",
+  "darkMode": "Dark Mode",
+  "language": "Language",
+  "logout": "Logout",
+  "selectPhotoPrompt": "Choose a photo from your gallery to enhance its resolution to HD quality.",
+  "aiProcessing": "AI is processing..."
+}
