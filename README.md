@@ -232,7 +232,3 @@ If you would like to contribute:
 2. Create a new branch
 3. Make your changes
 4. Open a pull request
-
-## Note
-
-This README is prepared as an initial project overview and is intended to reflect the project’s intended architecture and goals. As the project evolves, technical details such as model choice, Firebase integration, and image processing implementation will be expanded.
